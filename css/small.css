@@ -1,0 +1,785 @@
+@media only screen and (max-width:768px) {
+    nav{
+        position: fixed;
+        /* width: 27vw; */
+        width: 0;
+        height: 100vh;
+		color: red;
+        background-color: rgba(0, 0, 0, 0.909);
+        z-index:1;
+        opacity: 0.9;
+        display: block;
+        visibility: hidden;
+        left: 0;
+        border-bottom: 2px solid orange;
+        overflow-x: hidden;
+        transition: 0.5s;
+		padding: 5px 0px  5px 0;
+	}
+	
+	nav ul li{
+		list-style-type: none;
+        margin-top: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+		padding: 5px 5px  0px 0;
+	}
+	nav ul li a{
+        font-size: 20px;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		text-transform: capitalize;
+        transition: 0.5s;
+	}
+	.logo{
+		font-size: 20px;
+        padding-top: 20px;
+        font-weight: 700;
+	}
+    .content{
+        position: absolute;
+        top: 50%;
+        left:8%;
+        transform: translateY(-50%);
+        background-color: white;
+        border-top-right-radius: 30px;
+        width: 15em;
+        /* height: 15em; */
+        top: 20em;
+        left: 0;
+        padding: 5px;
+    }
+    .content h1{
+        font-size: 20px;
+        color: orange;
+    }
+    h4{
+        color: orange;
+        letter-spacing: 2px;
+        margin: 10px 0 0 20px;
+        font-size: 12px;
+    }
+    h3::before{
+        content: "-";
+    }
+    h3{
+        color: orange;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .newslatter form{
+        max-width: 100%;
+        position: relative;
+        display: none;
+    }
+    .about{
+        width: 100%;
+        padding: 10px 0px;
+        background-color: #191919;
+    }
+    .about img{
+        display: none;
+    }
+    .bb{
+        display: none;
+    }
+    .service{
+        background: #101010;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .title h1{
+        color: white;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 250px;
+        padding: 0;
+        width: 100%;
+        background: #191919;
+        border-radius: 10px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .card i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        color: orange;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .box > div{
+        background: #191919;
+        height: 20em;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .box > div:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+        background-color: #191919;
+    }
+    .titl h2{
+        font-size: 50px;
+        position: relative;
+        right: 350px;
+        text-align: center;
+    }
+    .box1{
+        display: grid;
+        grid-template-columns: 90%;
+        margin: auto;
+    }
+    .box1 .card i{
+        display: inline;
+    }
+    .card1 > div{
+        float: left;
+        text-align: left;
+    }
+    .box1 > div{
+        background: #191919;
+        height: 20em;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .box1 > div:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+        background-color: #191919;
+    }
+    .social a:hover{
+        transform: scale(1.2);
+        transition: .3s;
+    }
+    .social a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:  orange;
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+/* Tablets */
+
+@media only screen and (max-width:768px) {
+    
+    .content{
+        position: absolute;
+        transform: translateY(-50%);
+        background-color: orange;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 15em;
+        top: 27em;
+        left: 0;
+        padding: 5px;
+    }
+    .content h1{
+        font-size: 20px;
+        color: white;
+    }
+    .content h3{
+        color: white;
+    }
+    h4{
+        color: white;
+        letter-spacing: 2px;
+        margin: 0 0 0 2px;
+        font-size: 12px;
+    }
+    .name span{
+        color: white;
+    }
+    h3::before{
+        content: "-";
+    }
+    h3{
+        color: white;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .newslatter form{
+        max-width: 100%;
+        position: relative;
+        display: none;
+    }
+    .about{
+        width: 100%;
+        padding: 10px 0px;
+        background-color: #191919;
+    }
+    .about img{
+        display: none;
+    }
+    .bb{
+        display: none;
+    }
+    .service{
+        background: #101010;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .title h1{
+        color: white;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 250px;
+        padding: 0;
+        width: 100%;
+        background: #191919;
+        border-radius: 10px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .card i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        color: orange;
+    }
+    .box{
+        display: grid;
+        grid-template-columns:50% 50%;
+    }
+    .box > div{
+        background: #191919;
+        height: 20em;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .box > div:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+        background-color: #191919;
+    }
+    .titl h2{
+        font-size: 50px;
+        position: relative;
+        right: 350px;
+        text-align: center;
+    }
+    .box1{
+        display: grid;
+        grid-template-columns:50% 50%;
+        margin: auto;
+    }
+    .box1 .card i{
+        display: inline;
+    }
+    .card1 > div{
+        float: left;
+        text-align: left;
+    }
+    .box1 > div{
+        background: #191919;
+        height: 20em;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .box1 > div:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+        background-color: #191919;
+    }
+    .social a:hover{
+        transform: scale(1.2);
+        transition: .3s;
+    }
+    .social a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:  orange;
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+/* Small Laptop */
+
+@media only screen and (max-width:992px) {
+    nav{
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-bottom: 2px solid orange;
+    }
+    .logo{
+        color: white;
+        font-size: 25px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: ease-in-out, letter-spacing .5s ease-in-out;
+    }
+    .logo a{
+        text-decoration: none;
+        color: white;
+    }
+    .logo:hover{
+        letter-spacing: 4px;
+    }
+    span{
+        color: orange;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px  10px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    nav ul li:hover{
+        background-color: orange;
+        transition: .9s;
+    }
+    h3::before{
+        content: "- ";
+    }
+    h3{
+        color: orange;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .newslatter form{
+        max-width: 100%;
+        position: relative;
+        display: none;
+    }
+    .about{
+        width: 100%;
+        padding: 10px 0px;
+        background-color: #191919;
+    }
+    .about img{
+        display: none;
+    }
+    .bb{
+        display: none;
+    }
+    .service{
+        background: #101010;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .title h1{
+        color: white;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 20px;
+        padding: 0;
+        width: 30%;
+        background: #191919;
+        border-radius: 0px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .card i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        color: orange;
+    }
+    .card1{
+        height: 10px;
+        padding: 0;
+        width: 30%;
+        background: #191919;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .card1 i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        color: orange;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .box > div{
+        background: #191919;
+        height: 20em;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .box > div:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+        background-color: #191919;
+    }
+    .titl h2{
+        font-size: 50px;
+        position: relative;
+        right: 350px;
+        text-align: center;
+    }
+    .box1{
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+        grid-template-columns:50% 50%;
+        margin: auto;
+    }
+    .box1 .card1 i{
+        display: inline;
+    }
+    .card1 > div{
+        float: left;
+        text-align: left;
+    }
+    .box1 > div{
+        background: #191919;
+        height: 20em;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .box1 > div:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+        background-color: #191919;
+    }
+    .social a:hover{
+        transform: scale(1.2);
+        transition: .3s;
+    }
+    .social a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:  orange;
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+/* Large Screen */
+
+@media only screen and (max-width:1200px) {
+    nav{
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-bottom: 2px solid orange;
+    }
+    .logo{
+        color: white;
+        font-size: 25px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: ease-in-out, letter-spacing .5s ease-in-out;
+    }
+    .logo a{
+        text-decoration: none;
+        color: white;
+    }
+    .logo:hover{
+        letter-spacing: 4px;
+    }
+    span{
+        color: orange;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px  10px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    nav ul li:hover{
+        background-color: orange;
+        transition: .9s;
+    }
+    h3::before{
+        content: "- ";
+    }
+    h3{
+        color: orange;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .newslatter form{
+        max-width: 100%;
+        position: relative;
+        display: none;
+    }
+    .about{
+        width: 100%;
+        padding: 10px 0px;
+        background-color: #191919;
+    }
+    .about img{
+        display: none;
+    }
+    .bb{
+        display: none;
+    }
+    .service{
+        background: #101010;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .title h1{
+        color: white;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 250px;
+        padding: 0;
+        width: 100%;
+        background: #191919;
+        border-radius: 10px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .card i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        color: orange;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .box > div{
+        background: #191919;
+        height: 20em;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .box > div:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+        background-color: #191919;
+    }
+    .titl h2{
+        font-size: 50px;
+        position: relative;
+        right: 350px;
+        text-align: center;
+    }
+    .box1{
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    /* min-height: 400px; */
+        /* display: grid; */
+        grid-template-columns:50% 50%;
+        margin: auto;
+    }
+    .box1 .card1 i{
+        display: inline;
+    }
+    .card1 > div{
+        float: left;
+        text-align: left;
+    }
+    .box1 > div{
+        background: #191919;
+        height: 20em;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin: 10px;
+        align-items: center;
+    }
+    .box1 > div:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 10px;
+        background-color: green;
+    }
+    .card1{
+        height: 250px;
+        padding: 0;
+        width: 70%;
+        background: #191919;
+        border-radius: 10px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+    }
+    .card1 i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        color: orange;
+    }
+    .social a:hover{
+        transform: scale(1.2);
+        transition: .3s;
+    }
+    .social a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:  orange;
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+

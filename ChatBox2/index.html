@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> .::ChatBox </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="Css/Static/chat.css">
+    <link rel="stylesheet" href="css/Static/home.css">
+    <script src="Scripts/jquery.js"></script>
+</head>
+<body>
+    <!-- Chat Bar Block -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-buttton" type="button" class="collapsible"> Click here to chat with an agent
+            <i id="chat-icon" style= "color : #fff;" class="fa fa-comment fa-spin fa-1.5x"></i>
+        </button>
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                <div class="chat-container">
+                    <!-- Messages -->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span> Loading...</span></p>
+                    </div>
+                    <!-- User input box -->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input type="text" id="textInput" class="input-box" name="mesg" placeholder="Tap 'Enter' to send a Message">
+                            <p></p>
+                        </div>
+                        <div class="chat-bar-icon">
+                            <i id="chat-icon" style= "color : crimson;" class="fa fa-heart" onclick="heartButton()"></i>
+                            <i id="chat-icon" style= "color : #333;" class="fa fa-send" onclick="sendButton()"></i>
+                        </div>
+                    </div>
+                    <div id="chat-bar-bottom"></div>
+                    <p></p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="Scripts/chat.js"></script>
+<script src="Scripts/responses.js"></script>
+</html>
