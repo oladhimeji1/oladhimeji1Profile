@@ -451,13 +451,8 @@
         margin: 10px auto;
         text-align: center;
     }
-    .box{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .card{
-        height: 20px;
+        height: 250px;
         padding: 0;
         width: 30%;
         background: #191919;
@@ -466,6 +461,8 @@
         position: relative;
         overflow: hidden;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     .card i{
         font-size: 50px;
@@ -475,7 +472,9 @@
         color: orange;
     }
     .card1{
-        height: 10px;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
         padding: 0;
         width: 30%;
         background: #191919;
@@ -492,8 +491,10 @@
         color: orange;
     }
     .box{
+        justify-content: center;
+        align-items: center;
         display: grid;
-        grid-template-columns: 90%;
+        grid-template-columns: 100%;
     }
     .box > div{
         background: #191919;
@@ -657,11 +658,6 @@
         margin: 10px auto;
         text-align: center;
     }
-    .box{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .card{
         height: 250px;
         padding: 0;
@@ -681,6 +677,8 @@
         color: orange;
     }
     .box{
+        justify-content: center;
+        align-items: center;
         display: grid;
         grid-template-columns: 90%;
     }
@@ -711,20 +709,10 @@
         text-align: center;
     }
     .box1{
-        display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    /* min-height: 400px; */
-        /* display: grid; */
-        grid-template-columns:50% 50%;
-        margin: auto;
-    }
-    .box1 .card1 i{
-        display: inline;
-    }
-    .card1 > div{
-        float: left;
-        text-align: left;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns:100%;
     }
     .box1 > div{
         background: #191919;
@@ -744,24 +732,22 @@
         align-items: center;
         color: white;
         margin: 10px;
-        background-color: green;
     }
     .card1{
         height: 250px;
         padding: 0;
-        width: 70%;
-        background: #191919;
+        width: 80%;
         border-radius: 10px;
-        margin: 15px;
+        left: 10%;
         position: relative;
         overflow: hidden;
         text-align: left;
     }
     .card1 i{
         font-size: 50px;
-        display: block;
+        display: inline;
         text-align: center;
-        margin: 25px 0px;
+        margin: 25px 0px 0 0;
         color: orange;
     }
     .social a:hover{
